@@ -43,7 +43,7 @@ Then create an environment:
 
 ```bash
 cd quetz
-mamba env create -f environment.yml
+mamba env create -f environment.yml --python=3.11
 conda activate quetz
 ln -s "${CONDA_PREFIX}" .venv  # Necessary for pyright.
 ```
@@ -60,6 +60,7 @@ Use the CLI to create a `Quetz` instance:
 
 ```bash
 quetz run test_quetz --copy-conf ./dev_config.toml --dev --reload
+quetz start test_quetz --reload
 ```
 
 Links:
