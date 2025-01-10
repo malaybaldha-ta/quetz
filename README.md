@@ -43,7 +43,7 @@ Then create an environment:
 
 ```bash
 cd quetz
-mamba env create -f environment.yml --python=3.11
+mamba env create -f environment.yml
 conda activate quetz
 ln -s "${CONDA_PREFIX}" .venv  # Necessary for pyright.
 ```

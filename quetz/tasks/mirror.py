@@ -30,19 +30,19 @@ from quetz.utils import TicToc, add_static_file, check_package_membership
 
 KNOWN_SUBDIRS = (
     "noarch",
-    "linux-32",
+    # "linux-32",
     "linux-64",
-    "linux-aarch64",
-    "linux-armv6l",
-    "linux-armv7l",
-    "linux-ppc64",
-    "linux-ppc64le",
-    "linux-s390x",
-    "osx-64",
-    "osx-arm64",
-    "win-32",
-    "win-64",
-    "zos-z",
+    # "linux-aarch64",
+    # "linux-armv6l",
+    # "linux-armv7l",
+    # "linux-ppc64",
+    # "linux-ppc64le",
+    # "linux-s390x",
+    # "osx-64",
+    # "osx-arm64",
+    # "win-32",
+    # "win-64",
+    # "zos-z",
 )
 
 
@@ -561,6 +561,9 @@ def synchronize_packages(
     # if no channel data use known architectures
     if subdirs is None:
         subdirs = KNOWN_SUBDIRS
+
+    ### Forcing to use intended architecture directories instead of all subdirs
+    subdirs = KNOWN_SUBDIRS
 
     for arch in subdirs:
         initial_sync_mirror(

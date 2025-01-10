@@ -2,7 +2,18 @@ __pycache__
 files
 quetz.sqlite
 /channels/
+libblas/
+libcblas/
+libgfortran/
+libgfortran5/
+liblapack/
+libopenblas/
+libstdcxx/
+numpy/
+openssl/
+python_abi/
 xtensor/
+xtl/
 build
 dist/
 .jupyter_releaser_checkout/
@@ -12,6 +23,7 @@ dist/
 
 # Local setup
 test_quetz
+test_quetz_2
 
 # Logs
 *.log
@@ -26,3 +38,5 @@ test_quetz
 
 # OS
 .DS_Store
+
+~/.cache/

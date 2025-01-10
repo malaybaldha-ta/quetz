@@ -1,6 +1,6 @@
 name: quetz
 channels:
-  - https://repo.mamba.pm/conda-forge
+  - defaults
 dependencies:
   - python=3.11
   - pip
