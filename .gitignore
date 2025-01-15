@@ -24,6 +24,9 @@ dist/
 # Local setup
 test_quetz
 test_quetz_2
+test_quetz_3
+old_postgres_quetz
+postgres_quetz
 
 # Logs
 *.log

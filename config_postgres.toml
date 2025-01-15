@@ -1,0 +1,28 @@
+[github]
+# Register the app here: https://github.com/settings/applications/new
+# Use a callback URL like `http://localhost:8000/auth/github/authorize`
+client_id = "Ov23liOGn0wd9V150l69"
+client_secret = "fe86f28bbd2b039a8f06e5d287912236c8a58b08 "
+
+[sqlalchemy]
+database_url = "postgresql://postgres:mysecretpassword@localhost:5432/quetz"
+
+[session]
+# openssl rand -hex 32
+secret = "b72376b88e6f249cb0921052ea8a092381ca17fd8bb0caf4d847e337b3d34cf8"
+https_only = false
+
+[logging]
+level = "DEBUG"
+file = "quetz.log"
+
+[users]
+admins = ["dummy:alice","github:malaybaldha-ta"]
+
+[profiling]
+enable_sampling = false
+
+[mirroring]
+batch_length = 50
+batch_size = 1000000000
+num_parallel_downloads = 50
